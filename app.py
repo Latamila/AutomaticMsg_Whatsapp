@@ -38,6 +38,6 @@ for linha in pagina_clientes.iter_rows(min_row=2):
         pyautogui.hotkey('ctrl','w')
         sleep(5)
     except:
-        print('Não foi possível enviar  mensagem para {nome}')
+        print(f'Não foi possível enviar  mensagem para {nome}')
         with open('erros.csv','a',newline='', encoding='utf-8') as arquivo:
-            arquivo.write(f'{nome}, {telefone}')
+            arquivo.write(f'{nome} {telefone}, ')
