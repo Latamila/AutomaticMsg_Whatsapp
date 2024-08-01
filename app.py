@@ -32,7 +32,7 @@ for linha in pagina_clientes.iter_rows(min_row=2):
     sleep(10)
     try:  
         seta = pyautogui.locateCenterOnScreen('setaoficial.png')#IMAGEM ESTÁ NO REPOSITORIO
-        sleep(5)
+        sleep(10)
         pyautogui.click(seta[0],seta[1])
         sleep(5)
         pyautogui.hotkey('ctrl','w')
